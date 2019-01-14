@@ -3,82 +3,135 @@
 Name: Darla Innes
 Date Created: 01/06/19
 <<<<<<< HEAD
-Most Recent Revision: 01/07/19
+Most Recent Revision: 01/13/19
 -->
 <html lang="en">
-<head>
-<title>Darla's Portfolio</title>
+    <head>
+        <title>Darla's Portfolio</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr {
+                height: 30px;
+            }
+            th {
+                background-color: #546a7b;
+                color: #f2eded;
+            }
+            tr:nth-child(odd) {
+                background-color: #e4c3ad;
+            }
+        </style>
+    
     </head>
-<main>
-    <body>
-    <header>
-    <h1>Portfolio for Darla Innes</h1>
-        </header>
-    <hr />
-    <nav>
-        <p><a href="projects.html">Projects</a></p>
-        <p><a href="contact.html">Contact</a></p>
-        <p><a href="testimonials.html">Testimontials</a></p>
-    </nav>
-    <hr />
-    <section>
-        <article id="about-me">
-            <h2><em>About Me</em></h2> 
-            <img src="images/profile-pic.JPG" alt="Photo of Darla Innes" />
-            <p>My name is Darla Innes.</p>
-            <p>Add more information</p>
-        </article>
-        <article id="past">
-            <h2><em>Past Experiences</em></h2>
-            <img src="images/working-pic.JPG" alt="Photo of home office" />
-            <table>
-                <caption>Employment History</caption>
-                <tr>
-                    <th>Years Employed</th>
-                    <th>Employer</th>
-                    <th>Title</th>
-                </tr>
-                <tr>
-                    <td>2016-2019</td>
-                    <td>Holmes Corporation</td>
-                    <td>Project Manager</td>
-                </tr>
-                <tr>
-                    <td>2015-2016</td>
-                    <td>Fredrickson Learning</td>
-                    <td>Learning Developer</td>
-                </tr>
-                <tr>
-                    <td>2012-2015</td>
-                    <td>Convey Compliance</td>
-                    <td>Training and Documentation Specialist</td>
-                </tr>
-            </table>
-        </article>
-        <article id="hobbies">
-            <h2><em>Hobbies</em></h2>
-            <img src="images/creating.JPG" alt="Photo of a geometric drawing"/>
-            <ul>
-                <li>Flowers</li>
-                <ol>
-                    <li>Peonies</li>
-                    <li>Ranunculus</li>
-                    <li>Chrysanthemums</li>
-                </ol>
-                <li>Vacation Spots</li>
-                <ol>
-                    <li>Hawaii</li>
-                    <li>California</li>
-                    <li>Oregon</li>
-                </ol>
-            </ul>
-            <p>I <span style="color: lightcoral">love</span> to bake and make healthy meals. I also enjoy <span style="background-color: cadetblue">photography</span>, <span style="background-color: darkseagreen">painting</span>, and <span style="background-color: peachpuff">designing floral arrangements</span></p>
-        </article>
-    </section>
-    <footer>
-        <hr />
-        <p>&copy; 2019 Darla Innes. All rights reserved.</p>
-    </footer>
-    </body>
-</main>
+        <body>
+            <main>
+                <header>
+                    <h1>Portfolio for Darla Innes</h1>
+                </header>
+                
+                <nav>
+                    <p><a href="projects.html">Projects</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="testimonials.html">Testimontials</a></p>
+                    <div class="clear-float"></div>
+                </nav>
+                <section>
+                    <article id="about">
+                        <h2><em>About Me</em></h2> 
+                        <img src="images/profile-pic.JPG" alt="Photo of Darla Innes" width="250" />
+                        <p>My name is Darla Innes.</p>
+                        <p>Add more information</p>
+                        <div class="clear-float"></div>
+                    </article>
+                    
+                    <article id="experience">
+                        <h2><em>Past Experiences</em></h2>
+                        <img src="images/working-pic.JPG" alt="Photo of home office" width="250" />
+                        <div class="right-content">
+                            <table>
+                            <caption>Employment History</caption>
+                            <thead>
+                                <tr>
+                                    <th>Years Employed</th>
+                                    <th>Employer</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016-2019</td>
+                                    <td>Holmes Corporation</td>
+                                    <td>Project Manager</td>
+                                </tr>
+                                <tr>
+                                    <td>2015-2016</td>
+                                    <td>Fredrickson Learning</td>
+                                    <td>Learning Developer</td>
+                                </tr>
+                                <tr>
+                                    <td>2012-2015</td>
+                                    <td>Convey Compliance</td>
+                                    <td>Training and Documentation Specialist</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        </div>
+
+                        <div class="clear-float"></div>
+                    </article>
+                  
+                    <article id="hobbies">
+                        <h2><em>Hobbies</em></h2>
+                        <img src="images/creating.JPG" alt="Photo of a geometric drawing" width="250" />
+                        <div class="right-content">
+                        <ul>
+                            <li>Art</li>
+                            <ol>
+                                <li>Colored pencils</li>
+                                <li>Watercolor gouache</li>
+                                <li>Acrylic paints</li>
+                            </ol>
+                            <li>Flowers</li>
+                            <ol>
+                                <li>Peonies</li>
+                                <li>Ranunculus</li>
+                                <li>Chrysanthemums</li>
+                            </ol>
+                            <li>Vacation Spots</li>
+                            <ol>
+                                <li>Hawaii</li>
+                                <li>California</li>
+                                <li>Oregon</li>
+                            </ol>
+                            <li>Outdoor Activities</li>
+                            <ol>
+                                <li>Hiking</li>
+                                <li>Boating</li>
+                                <li>Walking</li>
+                        </ul>
+                            </div>
+                        <div class="clear-float"></div>
+                    </article>
+                </section>
+                <footer>
+                    <p>&copy; 2019 Darla Innes. All rights reserved.</p>
+                </footer>
+            </main>
+        </body>
+
 </html>
